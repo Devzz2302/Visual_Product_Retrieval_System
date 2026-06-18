@@ -1,19 +1,24 @@
-# AI-Powered Visual Product Search Engine
+# Visual Product Retrieval System using Deep Learning Embeddings
 
 ## Overview
 
-This project is an image-based product retrieval system that recommends visually similar fashion products using deep learning image embeddings.
+Visual Product Retrieval System is a computer vision application that retrieves visually similar fashion products using deep learning image embeddings. The system extracts high-dimensional feature representations from product images using a pretrained ResNet50 model and performs similarity based retrieval to recommend relevant products from a fashion catalog.
 
-The system leverages a pretrained ResNet50 model to extract feature representations from product images and uses K-Nearest Neighbors (KNN) with cosine similarity to retrieve the most visually similar products from a fashion catalog.
+The application provides an interactive interface where users can upload a fashion product image and receive visually similar recommendations in real time.
+
+---
 
 ## Features
 
 * Upload a fashion product image
-* Retrieve top-5 visually similar products
-* Deep learning feature extraction using ResNet50
-* Similarity search using KNN
-* Product metadata display
-* Interactive Streamlit web interface
+* Deep feature extraction using ResNet50
+* Visual similarity search using K-Nearest Neighbors (KNN)
+* Cosine similarity-based retrieval
+* Real-time recommendation generation
+* Interactive Streamlit dashboard
+* Fashion product metadata integration
+
+---
 
 ## Tech Stack
 
@@ -23,23 +28,72 @@ The system leverages a pretrained ResNet50 model to extract feature representati
 * Scikit-Learn
 * Streamlit
 * Pandas
+* NumPy
+* Pillow
+
+---
+
+## System Architecture
+
+Input Image
+↓
+ResNet50 Feature Extractor
+↓
+2048-D Feature Embeddings
+↓
+KNN + Cosine Similarity Search
+↓
+Top-K Similar Product Recommendations
+
+---
 
 ## Dataset
 
-Myntra Fashion Product Dataset
+The project utilizes product images and metadata derived from the Myntra Fashion Dataset.
 
-## Architecture
+Dataset Components:
 
-Image → ResNet50 → 2048-D Embedding → KNN Search → Similar Products
+* Product Images
+* Product Metadata
+* Category Information
+* Product Attributes
+
+---
+
+## Project Workflow
+
+1. Download product images from the dataset.
+2. Generate feature embeddings using ResNet50.
+3. Store embeddings for efficient retrieval.
+4. Upload a query image.
+5. Extract query image embeddings.
+6. Perform similarity search.
+7. Display top matching products.
+
+---
 
 ## Results
 
-The system generates image embeddings for fashion products and retrieves visually similar items in real time, achieving sub-second search latency on the indexed catalog.
+* Generated embeddings for 2,000+ fashion product images.
+* Achieved real-time image retrieval with low latency.
+* Successfully retrieved visually similar products based on learned image representations.
 
-## Future Improvements
+---
 
-* EfficientNet-based embeddings
-* FAISS similarity search
-* Category-aware retrieval
-* Larger product catalog
-* Multi-modal search using image and text
+## Future Enhancements
+
+* Integrate FAISS for scalable vector search.
+* Replace ResNet50 with CLIP embeddings.
+* Add FastAPI backend services.
+* Implement Precision@K and Recall@K evaluation metrics.
+* Deploy application on cloud infrastructure.
+
+---
+
+## Author
+
+**Devanshi Pandey**
+
+
+
+Focused on Artificial Intelligence, Machine Learning, Computer Vision, and Generative AI.
