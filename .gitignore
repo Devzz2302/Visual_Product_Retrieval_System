@@ -1,0 +1,54 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset Images
+dataset/images/
+
+# Generated Embeddings
+artifacts/
+
+# Test Files
+test_visual.py
+
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Streamlit Cache
+.streamlit/secrets.toml
+
+# Model Artifacts
+artifacts/*.pkl
+
+# Temporary Files
+*.tmp
+*.log
+
+# Torch Cache
+.cache/
+
+# Dataset Images
+dataset/images/
+
+# Uploaded Files
+uploads/
+
+# Large Files
+*.pth
+*.pt
